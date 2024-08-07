@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-2</title>
+</head>
+
+<body>
+
+    <h3 id="father"></h3>
+    <h3 id="father-age"></h3>
+
+    <h3 id="child"></h3>
+    <h3 id="child-age"></h3>
+
+    <script>
+        class person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            fatherInfo() {
+                document.getElementById("father").innerHTML = (`Father name : ${this.name}`);
+                document.getElementById("father-age").innerHTML = (`Age : ${this.age}`);
+            }
+            childInfo() {
+                document.getElementById("child").innerHTML = (`Child name : ${this.name}`);
+                document.getElementById("child-age").innerHTML = (`Age : ${this.age}`);
+            }
+
+        }
+        var father = new person("(Late) Munjapara Rajeshbhai Trikambhai", 49);
+        father.fatherInfo();
+
+        var child = new person("Munjapara Dhruvin Rajeshbhai", 20);
+        child.childInfo();
+    </script>
+</body>
+
+</html>

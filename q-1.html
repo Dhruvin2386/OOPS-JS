@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-1</title>
+</head>
+<body>
+    
+    <table border="1" cellpadding="10" cellspacing="0" style="margin: auto;">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Faculty</th>
+                <th>Peon</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="student"></td>
+                <td id="faculty"></td>
+                <td id="peon"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        class school {
+            
+            student(name,mail,contact){
+
+                document.getElementById("student").innerHTML += `Name :- ${name}</br>`;
+                document.getElementById("student").innerHTML += `E-mail :- ${mail}</br>`;
+                document.getElementById("student").innerHTML += `Contact :- ${contact}`;
+            }
+
+            faculty(name,mail,contact){
+                document.getElementById("faculty").innerHTML += `Faculty Name :- ${name}</br>`;
+                document.getElementById("faculty").innerHTML += `E-mail :- ${mail}</br>`;
+                document.getElementById("faculty").innerHTML += `Contact :- ${contact}`;
+                
+            }
+
+            peon(name,mail,contact){
+
+                document.getElementById("peon").innerHTML+= `Peon Name :- ${name}</br>`;
+                document.getElementById("peon").innerHTML += `E-mail :- ${mail}</br>`;
+                document.getElementById("peon").innerHTML += `Contact :- ${contact}`;
+            }
+
+        }
+
+        var a = new school();
+        a.student("Dhruvin","dhruvin2386@gmail.com","98245 76543");
+        a.faculty("Keyur gohil","keyurgohil@gmail.com","90547 86076");  
+        a.peon("Chaganbhai","chagan007@gmail.com","82009 50303");
+    </script>
+</body>
+</html>

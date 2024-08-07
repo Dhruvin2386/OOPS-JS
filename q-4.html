@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-4</title>
+</head>
+
+<body>
+    <table border="1" cellpadding="10" cellspacing="0" style="margin: auto;">
+        <thead>
+            <tr>
+                <th>Circle</th>
+                <th>Rectangle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="circle"></td>
+                <td id="rectangle"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+
+        class Formula {
+
+            circle(radius) {
+                var circle = 3.14 * radius * radius;
+                document.getElementById("circle").innerHTML = `radius(10) = ${circle}`;
+            }
+
+            rectangle(width, height) {
+                var rectangle = width * height;
+                document.getElementById("rectangle").innerHTML = `width(10) * height(10) = ${rectangle}`;
+            }
+
+        }
+        var a = new Formula();
+        a.circle(10);
+        a.rectangle(10, 10)
+    </script>
+</body>
+
+</html>
